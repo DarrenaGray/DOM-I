@@ -51,6 +51,10 @@ links[3].innerHTML = siteContent['nav']['nav-item-4'];
 links[4].innerHTML = siteContent['nav']['nav-item-5'];
 links[5].innerHTML = siteContent['nav']['nav-item-6'];
 
+const navColor = document.querySelectorAll('nav a');
+navColor.forEach(element => {
+  element.style.color = 'green';
+})
 
 // CTA
 
@@ -98,6 +102,12 @@ const contactContent = document.querySelectorAll('.contact p');
 contactContent[0].innerHTML = siteContent['contact']['address'];
 contactContent[1].innerHTML = siteContent['contact']['phone'];
 contactContent[2].innerHTML = siteContent['contact']['email'];
+
+
+const newBR = document.createElement('BR');
+newBR.appendChild()
+// const br = document.createElement('br');
+// contactContent.appendChild(br);
 
 
 // Footer
