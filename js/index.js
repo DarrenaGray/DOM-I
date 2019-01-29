@@ -100,11 +100,9 @@ contactContent[1].innerHTML = siteContent['contact']['phone'];
 contactContent[2].innerHTML = siteContent['contact']['email'];
 
 
-
-
-
 // Footer
-
+const footer = document.querySelector('footer p');
+footer.innerHTML = siteContent['footer']['copyright'];
 
 
 
