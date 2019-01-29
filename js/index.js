@@ -71,6 +71,7 @@ ctaImg.src = siteContent.cta['img-src'];
 // Main Content
 
 const headerContent = document.querySelectorAll('.text-content h4');
+console.log(headerContent);
 headerContent[0].innerHTML = siteContent['main-content']['features-h4'];
 headerContent[1].innerHTML = siteContent['main-content']['about-h4'];
 headerContent[2].innerHTML = siteContent['main-content']['services-h4'];
@@ -89,15 +90,21 @@ midImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 
 
+// Contact
+const contactHeader = document.querySelector('.contact h4');
+contactHeader.innerHTML = siteContent['contact']['contact-h4'];
+
+const contactContent = document.querySelectorAll('.contact p');
+contactContent[0].innerHTML = siteContent['contact']['address'];
+contactContent[1].innerHTML = siteContent['contact']['phone'];
+contactContent[2].innerHTML = siteContent['contact']['email'];
+
+
+
 
 
 // Footer
 
-
-
-
-
-// Contact
 
 
 
