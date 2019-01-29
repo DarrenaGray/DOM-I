@@ -56,6 +56,27 @@ navColor.forEach(element => {
   element.style.color = 'green';
 })
 
+let nav2 = document.querySelector('header nav');
+const links2 = document.createElement('a');
+links2.innerHTML = 'Social Media';
+nav2.appendChild(links2);
+
+/* Tried to this first...it created completely new a tags but wasn't connected to nav bar */
+// links2.setAttribute('href', '#', siteContent['nav']['a']);
+// console.log(links2)
+// const newItem = document.createTextNode('Social Media');
+
+const links3 = document.createElement('a');
+links3.innerHTML = 'Home';
+
+/* Tried to this first...it created completely new a tags but wasn't connected to nav bar */
+// links3.setAttribute('href', '#', siteContent['nav']['a']);
+// const newItem2 = document.createTextNode('Home');
+
+nav2.prepend(links3);
+console.log(links3)
+
+
 // CTA
 
 const ctaText = document.querySelector('.cta h1');
@@ -75,7 +96,6 @@ ctaImg.src = siteContent.cta['img-src'];
 // Main Content
 
 const headerContent = document.querySelectorAll('.text-content h4');
-console.log(headerContent);
 headerContent[0].innerHTML = siteContent['main-content']['features-h4'];
 headerContent[1].innerHTML = siteContent['main-content']['about-h4'];
 headerContent[2].innerHTML = siteContent['main-content']['services-h4'];
@@ -102,12 +122,6 @@ const contactContent = document.querySelectorAll('.contact p');
 contactContent[0].innerHTML = siteContent['contact']['address'];
 contactContent[1].innerHTML = siteContent['contact']['phone'];
 contactContent[2].innerHTML = siteContent['contact']['email'];
-
-
-const newBR = document.createElement('BR');
-newBR.appendChild()
-// const br = document.createElement('br');
-// contactContent.appendChild(br);
 
 
 // Footer
